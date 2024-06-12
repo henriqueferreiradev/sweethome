@@ -1,0 +1,59 @@
+@import url(reset.css);
+
+:root{
+    --branco: #FFFFFF;
+    --bege: #FAEED1;
+    --preto: #000000;
+    --verde: #607274;
+    --marrom: #B2A59B;
+    --marrom-claro: #ece7dc;
+    --fonte-principal: "Poppins";
+    --fonte-secundaria: "Noto Sans";
+    --fonte-titulo: 'Gwendolyn';
+}
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    background-color: var(--marrom-claro);
+     
+}
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 4em;
+    background-color: var(--verde);
+    color: var(--branco);
+    align-items: center;
+     
+    
+}
+.cabecalho__logo {
+    display: flex;
+}
+.cabecalho__link {
+    padding: 1em;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.cabecalho__titulo {
+    font-size: 40px;
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+}
+.cabecalho__botao {
+    color: var(--branco);
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: var(--marrom);
+    padding: 1em 2em;
+}
+
+.container__form img {
+    width: 100%;
+}
