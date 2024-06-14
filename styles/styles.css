@@ -14,7 +14,11 @@
 body {
     font-family: var(--fonte-principal);
     font-size: 16px;
-    background-color: var(--marrom-claro);
+    color: var(--branco);
+    background-image: url(../assets/craftsman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
      
 }
 header {
@@ -26,7 +30,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em 4em;
-    background-color: var(--verde);
     color: var(--branco);
     align-items: center;
      
@@ -54,6 +57,8 @@ header {
     padding: 1em 2em;
 }
 
-.container__form img {
-    width: 100%;
+ 
+ 
+.container__inicio {
+
 }
