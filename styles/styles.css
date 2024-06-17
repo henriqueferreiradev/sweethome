@@ -5,8 +5,9 @@
     --bege: #FAEED1;
     --preto: #000000;
     --verde: #607274;
-    --marrom: #B2A59B;
-    --marrom-claro: #ece7dc;
+    --amarelo: #F28D35;
+    --marrom-claro: #F2E7DC;
+    --preto-opaco: rgba(0, 0, 0, 0.6);
     --fonte-principal: "Poppins";
     --fonte-secundaria: "Noto Sans";
     --fonte-titulo: 'Gwendolyn';
@@ -15,17 +16,14 @@ body {
     font-family: var(--fonte-principal);
     font-size: 16px;
     color: var(--branco);
+    background-color: #000000;
     background-image: url(../assets/craftsman.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
  
      
 }
-header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
+ 
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -58,7 +56,190 @@ header {
 }
 
  
- 
-.container__inicio {
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+     
+}
 
+.container__inicio {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background: var(--preto-opaco);
+    margin: 6em 20em 1em 20em;
+    padding: 3em;
+    border-radius: 20px;
+}
+.titulo--logo {
+    font-size: 200px;
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+}
+.inicio__titulo{
+    font-size: 40px;
+     
+  
+}
+.inicio__parag{
+    font-size: 40px;
+}
+.container__sobre  {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: var(--preto-opaco);
+    margin: 2em 30em;
+    padding: 4em;
+    border-radius: 20px;
+    
+    
+}
+
+.sobre__titulo {
+    font-weight: 700;
+    font-size: 42px;
+    
+    
+    
+}
+.sobre__parag {
+    font-size: 22px;
+     
+}
+
+.container__servicos {
+     
+    margin-top: 11em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicos__titulo {
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+    font-size: 42px;
+    margin: 1em 0;
+}
+.servicos__lista {
+    display: flex;
+    gap: 2em;
+    padding: 1em;
+}
+
+.lista__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+    gap: 1em;
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 355px;
+     
+    
+    
+}
+
+.lista__info img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    top: 0;
+    
+}
+.lista__info h3 {
+    color: var(--preto);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 0.5em 0 0.5em;
+}
+.lista__info p {
+    color: var(--preto);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+    flex-grow: 1;
+    color: gray;
+}
+.lista__info a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--branco);
+    padding: 1em 2em;
+    border-radius: 10px;
+    background-color: var(--preto);
+    margin-bottom: 10px;
+    
+     
+}
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+    gap: 1em;
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0 1px 20px rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    max-width: 355px;
+    color: var(--preto);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+    flex-grow: 1;
+    padding: 1em;
+    height: 400px;
+     
+}
+ 
+.lista__depoimentos {
+    display: flex;
+}
+.user {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.lista__card p {
+    color: gray;
+    margin: 2em;
+
+}
+.lista__card h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+.lista__stars img {
+    width: 20px;
+}
+
+
+.depoimentos__titulos {
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+    font-size: 42px;
+    margin: 1em 0;
+}
+
+.contatos {
+    display: flex;
+    text-align: center;
 }
