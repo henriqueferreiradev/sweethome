@@ -15,10 +15,12 @@
 
 <body>
     <header class="cabecalho">
-        <div class="cabecalho__logo">
 
-            <h2 class="cabecalho__titulo">Sweet Home</h2>
-        </div>
+
+        <a class="cabecalho__titulo" href="#">
+            <h2>Sweet Home</h2>
+        </a>
+
         <nav>
             <a class="cabecalho__link" href="#">Home</a>
             <a class="cabecalho__link" href="#">About</a>
@@ -159,24 +161,37 @@
             <div class="contatos-titulo">
                 <h2>Pronto para Encontrar Seu Novo Lar?</h2>
                 <h3>Entre em contato conosco hoje e deixe-nos ajudar a transformar seu sonho em realidade.</h3>
+                <div class="contatos-contato">
+                    <h2>Contato</h2>
+                    <ul>
+                        <li>Telefone: (XX) XXXX-XXXX</li>
+                        <li>Email: contato@sweethome.com</li>
+                        <li>Endereço: Rua Exemplo, 123, Bairro, Cidade, Estado</li>
+                    </ul>
+                </div>
+
+                <a class="cabecalho__titulo" href="#">
+                    <h2>Sweet Home</h2>
+                </a>
+                <nav>
+                    <a class="cabecalho__link" href="#">Home</a>
+                    <a class="cabecalho__link" href="#">About</a>
+                    <a class="cabecalho__link" href="#">Projects</a>
+                    <a class="cabecalho__link" href="#">Blog</a>
+                    <a class="cabecalho__link" href="#">Contact</a>
+                </nav>
             </div>
 
             <form class="contatos-form">
                 <input type="text" name="nome" id="nome" placeholder="Nome">
                 <input type="text" name="email" id="email" placeholder="Email">
+                <input type="text" name="telefone" id="telefone" placeholder="Telefone">
                 <textarea id="mensagem" name="mensagem" rows="10" cols="50"
                     placeholder="Digite aqui sua mensagem..."> </textarea>
-                    <button type="submit">Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
 
-            <div class="contatos-contato">
-                <h2>Contato</h2>
-                <ul>
-                    <li>Telefone: (XX) XXXX-XXXX</li>
-                    <li>Email: contato@sweethome.com</li>
-                    <li>Endereço: Rua Exemplo, 123, Bairro, Cidade, Estado</li>
-                </ul>
-            </div>
+
         </section>
     </main>
     <footer>

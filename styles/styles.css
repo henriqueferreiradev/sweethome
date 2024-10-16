@@ -28,16 +28,13 @@ body {
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    padding: 1em 4em;
+    padding: 1.5em 5em;
     color: var(--branco);
     align-items: center;
 
 
 }
 
-.cabecalho__logo {
-    display: flex;
-}
 
 .cabecalho__link {
     padding: 1em;
@@ -46,9 +43,11 @@ body {
 }
 
 .cabecalho__titulo {
-    font-size: 40px;
+    font-size: 48px;
     font-family: var(--fonte-titulo);
     font-weight: 700;
+    text-decoration: none;
+    color: var(--branco);
 }
 
 .cabecalho__botao {
@@ -150,7 +149,7 @@ body {
     font-size: 22px;
 }
 
- 
+
 
 .container__servicos {
 
@@ -162,7 +161,7 @@ body {
     padding: 5em;
 
     justify-content: space-around;
- 
+
 }
 
 .servicos__titulo {
@@ -171,10 +170,12 @@ body {
     font-size: 72px;
 
 }
+
 .servicos__texto {
     font-size: 22px;
-    margin: 1em 0 0 0 ;
+    margin: 1em 0 0 0;
 }
+
 .btn-prop {
     align-self: center;
     padding: 1em;
@@ -182,7 +183,7 @@ body {
     font-size: 24px;
     border-bottom: 3px solid var(--branco);
     border-radius: 15px;
- 
+
     text-decoration: none;
 
 
@@ -262,7 +263,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     height: 80vh;
- }
+}
 
 .lista__card {
     display: flex;
@@ -270,7 +271,7 @@ body {
     align-items: center;
     margin: 10px;
     justify-content: center;
-     background-color: var(--branco);
+    background-color: var(--branco);
     border-radius: 10px;
     box-shadow: 0 1px 20px rgba(255, 255, 255, 0.8);
     overflow: hidden;
@@ -303,10 +304,10 @@ body {
 }
 
 .lista__card h3 {
-    
+
     font-size: 18px;
     font-weight: 500;
-    margin: 0.5em 0 ;
+    margin: 0.5em 0;
 }
 
 .lista__stars img {
@@ -324,28 +325,51 @@ body {
 .container-contatos {
     display: flex;
     text-align: center;
-    justify-content: space-between;
-    margin: 0 5em ;
+    justify-content: space-evenly;
+
+
 }
+
 .contatos-titulo {
     text-align: start;
 }
 
+.contatos-contato {
+    margin: 3em 0;
+}
+
+.contatos-contato h2,
+li {
+    margin: 0.5em 0;
+}
+
 .contatos-titulo h2 {
     font-size: 32px;
+    margin: 0.3em 0;
 
 }
+
 
 .contatos-form {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-  
+    align-items: center;
+
 }
 
-.contatos-form input, textarea, button {
+.contatos-form input,
+textarea,
+button {
     width: 100%;
+    padding: 1em;
+    border-radius: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 0.3em 0;
+    background-color: var(--preto-opaco);
+    color: var(--branco);
+    font-size: 16px;
 }
+
 .contatos-form textarea {
     resize: none;
 }
