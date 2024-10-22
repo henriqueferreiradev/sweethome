@@ -18,11 +18,8 @@ body {
     font-size: 16px;
     color: var(--branco);
     background-color: #000000;
-    background-image: url(../assets/craftsman.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
 
-
+    
 }
 
 .cabecalho {
@@ -66,7 +63,12 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
+     
 
+    background-image: url(../assets/craftsman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 
 }
 
@@ -75,9 +77,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    width: 100%;
     background: var(--preto-opaco);
     border-radius: 20px;
-    padding: 4em;
+ 
 
 }
 
@@ -103,10 +107,10 @@ body {
 .container__sobre {
     display: flex;
     justify-content: space-between;
-    align-items: last baseline;
+    align-items: center;
     gap: 4em;
     height: 100vh;
-    margin: 5em;
+    margin: 0 5em;
 
 }
 
@@ -350,26 +354,38 @@ li {
 }
 
 
-.contatos-form {
+.contatos-form { 
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    margin: 1.5em;
 
 }
 
 .contatos-form input,
 textarea,
 button {
-    width: 100%;
-    padding: 1em;
+    width: 70%;
+    padding: 0.7em;
     border-radius: 15px;
     border: 1px solid rgb(255, 255, 255);
     margin: 0.3em 0;
     background-color: var(--preto-opaco);
     color: var(--branco);
     font-size: 16px;
+
 }
 
 .contatos-form textarea {
     resize: none;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
 }

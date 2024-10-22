@@ -14,32 +14,31 @@
 </head>
 
 <body>
-    <header class="cabecalho">
 
-
-        <a class="cabecalho__titulo" href="#">
-            <h2>Sweet Home</h2>
-        </a>
-
-        <nav>
-            <a class="cabecalho__link" href="#">Home</a>
-            <a class="cabecalho__link" href="#">About</a>
-            <a class="cabecalho__link" href="#">Projects</a>
-            <a class="cabecalho__link" href="#">Blog</a>
-            <a class="cabecalho__link" href="#">Contact</a>
-        </nav>
-        <a class="cabecalho__botao" href="#">Call us</a>
-
-    </header>
     <main>
-        <section class="container">
+        <section id="home" class="container">
+            <div class="cabecalho">
+                <a class="cabecalho__titulo" href="#">
+                    <h2>Sweet Home</h2>
+                </a>
+
+                <nav>
+                    <a class="cabecalho__link" href="#home">Home</a>
+                    <a class="cabecalho__link" href="#about">Sobre nós</a>
+                    <a class="cabecalho__link" href="#">Propriedades</a>
+                    <a class="cabecalho__link" href="#">Galery</a>
+                    <a class="cabecalho__link" href="#">Blog</a>
+                    <a class="cabecalho__link" href="#">Contact</a>
+                </nav>
+                <a class="cabecalho__botao" href="#">Call us</a>
+            </div>
             <div class="container__inicio">
                 <h2 class="inicio__titulo">Encontre Seu Novo Lar com a<h2>
                         <p class="titulo--logo">Sweet Home</p>
                         <p class="inicio__titulo">Seu Parceiro Confiável no Mercado Imobiliário</p>
             </div>
         </section>
-        <section class="section-sobre">
+        <section id="about" class="section-sobre">
             <div class="container__sobre">
                 <div class="div-sobre">
                     <div class="sobre-div--titulo">
@@ -161,41 +160,42 @@
             <div class="contatos-titulo">
                 <h2>Pronto para Encontrar Seu Novo Lar?</h2>
                 <h3>Entre em contato conosco hoje e deixe-nos ajudar a transformar seu sonho em realidade.</h3>
-                <div class="contatos-contato">
-                    <h2>Contato</h2>
-                    <ul>
-                        <li>Telefone: (XX) XXXX-XXXX</li>
-                        <li>Email: contato@sweethome.com</li>
-                        <li>Endereço: Rua Exemplo, 123, Bairro, Cidade, Estado</li>
-                    </ul>
-                </div>
 
-                <a class="cabecalho__titulo" href="#">
-                    <h2>Sweet Home</h2>
-                </a>
-                <nav>
-                    <a class="cabecalho__link" href="#">Home</a>
-                    <a class="cabecalho__link" href="#">About</a>
-                    <a class="cabecalho__link" href="#">Projects</a>
-                    <a class="cabecalho__link" href="#">Blog</a>
-                    <a class="cabecalho__link" href="#">Contact</a>
-                </nav>
+
+
+
+
+                <form class="contatos-form">
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
+                    <input type="text" name="email" id="email" placeholder="Email">
+                    <input type="text" name="telefone" id="telefone" placeholder="Telefone">
+                    <textarea id="mensagem" name="mensagem" rows="10" cols="50"
+                        placeholder="Digite aqui sua mensagem..."> </textarea>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-
-            <form class="contatos-form">
-                <input type="text" name="nome" id="nome" placeholder="Nome">
-                <input type="text" name="email" id="email" placeholder="Email">
-                <input type="text" name="telefone" id="telefone" placeholder="Telefone">
-                <textarea id="mensagem" name="mensagem" rows="10" cols="50"
-                    placeholder="Digite aqui sua mensagem..."> </textarea>
-                <button type="submit">Enviar</button>
-            </form>
-
 
         </section>
     </main>
-    <footer>
-        <p></p>
+    <footer class="footer">
+        <a class="cabecalho__titulo" href="#">
+            <h2>Sweet Home</h2>
+        </a>
+        <nav>
+            <a class="cabecalho__link" href="#">Home</a>
+            <a class="cabecalho__link" href="#">Propriedades</a>
+            <a class="cabecalho__link" href="#">Galery</a>
+            <a class="cabecalho__link" href="#">Blog</a>
+            <a class="cabecalho__link" href="#">Contact</a>
+        </nav>
+
+        <div class="contatos-contato">
+            <ul>
+                <li>Telefone: (XX) XXXX-XXXX</li>
+                <li>Email: contato@sweethome.com</li>
+                <li>Endereço: Rua Exemplo, 123, Bairro, Cidade, Estado</li>
+            </ul>
+        </div>
     </footer>
 </body>
 
