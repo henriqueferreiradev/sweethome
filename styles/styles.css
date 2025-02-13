@@ -1,18 +1,20 @@
 @import url(reset.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 :root {
     --branco: #FFFFFF;
     --bege: #FAEED1;
     --preto: #000000;
     --verde: #607274;
-    --amarelo: #F28D35;
+    --amarelo: #A86340;
     --marrom-claro: #F2E7DC;
     --preto-opaco: rgba(0, 0, 0, 0.3);
     --fonte-principal: "Poppins";
     --fonte-secundaria: "Noto Sans";
-    --fonte-titulo: 'Gwendolyn';
+    --fonte-titulo: 'Pacifico';
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: var(--fonte-principal);
     font-size: 16px;
@@ -28,7 +30,7 @@ body {
     padding: 1.5em 5em;
     color: var(--branco);
     align-items: center;
-
+    background-color: #000000;
 
 }
 
@@ -37,6 +39,7 @@ body {
     padding: 1em;
     text-decoration: none;
     color: var(--branco);
+    
 }
 
 .cabecalho__titulo {
@@ -55,8 +58,16 @@ body {
     padding: 1em 2em;
 
 }
-
-
+.cabecalho__link:hover {
+    color: var(--amarelo);
+}
+.titulos {
+    color: var(--amarelo);
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+}
 .container {
     text-align: center;
     display: flex;
@@ -86,29 +97,20 @@ body {
 }
 
 
-.titulo--logo {
-    font-size: 100px;
-    font-family: var(--fonte-titulo);
-    font-weight: 700;
-    margin: .5em 0;
-}
-
-.inicio__titulo {
-    font-size: 32px;
-}
-
+ 
 .section-sobre {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 2em 0;
 }
 
 .container__sobre {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    gap: 4em;
+   
     height: 100vh;
     margin: 0 5em;
 
@@ -117,8 +119,9 @@ body {
 .div-sobre {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 2em;
+    justify-content: center;
+    align-items: center;
+ 
 
 }
 
@@ -126,31 +129,25 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+ 
+    gap: 1em;
 }
 
 .sobre-img {
-    width: 50%;
-    height: 85%;
-    border-radius: 25px;
-    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.6);
-}
-
-.sobre-img2 {
-    width: 30%;
+    width: 24%;
+    height: auto;
     border-radius: 20px;
-
-
+    object-fit: contain;
+    box-shadow: 3px 1px 10px rgba(205, 78, 0, 0.6);
 }
 
-.sobre__titulo {
-    font-family: var(--fonte-titulo);
-    font-weight: 700;
-    font-size: 72px;
-}
+ 
+
+ 
 
 .sobre__parag {
-    font-size: 22px;
+    font-size: 16px;
+    margin: 2em 0;
 }
 
 
@@ -168,18 +165,15 @@ body {
 
 }
 
-.servicos__titulo {
-    font-family: var(--fonte-titulo);
-    font-weight: 700;
-    font-size: 72px;
-
-}
+ 
 
 .servicos__texto {
     font-size: 22px;
     margin: 1em 0 0 0;
 }
-
+.button {
+    background-color: var(--amarelo);
+}
 .btn-prop {
     align-self: center;
     padding: 1em;
@@ -187,8 +181,8 @@ body {
     font-size: 24px;
     border-bottom: 3px solid var(--branco);
     border-radius: 15px;
-
     text-decoration: none;
+    background-color: var(--amarelo);
 
 
 }
@@ -217,7 +211,6 @@ body {
 
 .lista__info:hover {
     transform: translateY(-10px);
-
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
 }
 
@@ -256,7 +249,8 @@ body {
 }
 
 .lista__info a:hover {
-    background-color: var(--destaque);
+    background-color: var(--amarelo);
+
 }
 
 
@@ -319,12 +313,7 @@ body {
 }
 
 
-.depoimentos__titulos {
-    font-family: var(--fonte-titulo);
-    font-weight: 700;
-    font-size: 72px;
-    text-align: center;
-}
+ 
 
 .container-contatos {
     display: flex;
