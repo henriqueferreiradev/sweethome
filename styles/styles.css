@@ -27,10 +27,9 @@ body {
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    padding: 1.5em 5em;
+    padding: 1.5em ;
     color: var(--branco);
-    align-items: center;
-    background-color: #000000;
+ 
 
 }
 
@@ -43,7 +42,7 @@ body {
 }
 
 .cabecalho__titulo {
-    font-size: 48px;
+    font-size: 12px;
     font-family: var(--fonte-titulo);
     font-weight: 700;
     text-decoration: none;
@@ -68,19 +67,27 @@ body {
     font-size: 42px;
     text-align: center;
 }
+.backg, .mask  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -999;
+    background: var(--preto-opaco);
+}
+.mask {
+    z-index: -998;
+}
 .container {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-     
-
-    background-image: url(../assets/craftsman.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    
-
+    background-size: cover;  
 }
 
 .container__inicio {
@@ -90,7 +97,7 @@ body {
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background: var(--preto-opaco);
+  
     border-radius: 20px;
  
 
